@@ -4,26 +4,18 @@
 
 ## Usage
 
-### Via `.babelrc` (Recommended)
-
-**.babelrc**
+webpack:
 
 ```json
-{
-  "presets": ["es2015"]
-}
-```
-
-### Via CLI
-
-```sh
-$ babel script.js --presets es2015 
-```
-
-### Via Node API
-
-```javascript
-require("babel-core").transform("code", {
-  presets: ["es2015"]
-});
+module: {
+		loaders: [
+			{
+				...
+				query: {
+					...
+					presets: ["es2015-loose-balance"]
+				}
+			}
+		]
+	}
 ```
