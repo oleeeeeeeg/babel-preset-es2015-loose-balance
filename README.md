@@ -10,9 +10,9 @@ webpack:
 module: {
 		loaders: [
 			{
-				...
+		
 				query: {
-					...
+		
 					presets: ["es2015-loose-balance"]
 				}
 			}
