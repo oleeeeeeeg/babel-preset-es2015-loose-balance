@@ -32,9 +32,15 @@
     "babel-plugin-transform-es2015-destructuring": "^6.9.0",
     "babel-plugin-transform-es2015-block-scoping": "^6.9.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.6.0",
-    "babel-plugin-transform-regenerator": "^6.9.0"
+    "babel-plugin-transform-regenerator": "^6.9.0",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {
     "babel-helper-transform-fixture-test-runner": "^6.9.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
